@@ -1,0 +1,78 @@
+<html>
+<head>
+
+    <title>position & Absolute</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 1000px;
+            margin: auto;
+            border: solid 1px black;
+            display: flex;
+            position: relative;
+            cursor: pointer;
+            
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            transition: 2s;
+            top: 0px;
+            left: 0px;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            position: absolute;
+            transition: 2s;
+            top: 0px;
+            right: 0px;
+        }
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            transition: 2s;
+            bottom: 0px;
+            left: 0px;
+        }
+        .box4{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            position: absolute;
+            transition: 2s;
+            bottom: 0px;
+            right: 0px;
+        }
+        .main:hover .box1{
+            top: 400px;
+            left: 800px;
+        }
+       .main:hover .box4{
+            bottom: 400px;
+            right: 800px;
+       }
+       .main:hover .box2{
+           top: 400px;
+           right: 800px;
+       }
+       .main:hover .box3{
+            bottom: 400px;
+            left: 800px;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</body>
+</html>
